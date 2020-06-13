@@ -15,6 +15,8 @@ function getTimelineUrlPath (timeline) {
       return 'favourites'
     case 'direct':
       return 'conversations'
+    case 'bookmarks':
+      return 'bookmarks'
   }
   if (timeline.startsWith('tag/')) {
     return 'timelines/tag'
